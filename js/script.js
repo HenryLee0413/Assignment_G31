@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Map of keywords to pages
         const pageMap = {
-            "car gadget": "Car Gadget.html",
+            "CarGadget": "CarGadget.html",
             "gaming": "GamingAccessories.html",
             "keyboard": "Keyboard.html",
             "mouse": "Mouse.html",

@@ -9,17 +9,24 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 <script src="js/script.js" defer></script>
+<!--
+CartandCustomerInfo.css → Styles for the cart page & customer info page.
+stylesheet_HF.css → Likely for Header & Footer (navigation, footer layout).
+Font Awesome → Provides the shopping cart, magnifying glass, and other icons.
+jQuery → For DOM manipulation (dynamic cart updates).
+script.js → Custom JavaScript (cart logic: add/remove/update items).
+-->
 </head>
 
 <body>
     <!-- For Header Part -->
-    <div class="fixedHeader">
-        <div class="logoContainer">
+    <div class="fixedHeader"> <!--fixedHeader → Keeps the header/navigation fixed on top.-->
+        <div class="logoContainer"> <!--logoContainer → Holds logo image + title. --> 
             <a href="index.html"><img src="images/Logo/Logo.png" alt="Gadget Mall Logo" class="logo"></a>
             <h1>Gadget Mall</h1>
         </div>
     
-        <div class="menu">
+        <div class="menu"> <!--menu → Navigation bar with categories & links. --> 
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
@@ -39,19 +46,19 @@
             </ul>
         </div>
     
-        <div class="search">
+        <div class="search"> <!--search → Search bar + cart icon. --> 
             <input type="text" placeholder="Search">
             <button class="search-btn" aria-label="Search"><i class="fas fa-magnifying-glass"></i></button>
             <a href="cart.html" title="View Cart"><i class="fas fa-shopping-cart"></i></a>
         </div>
     </div>    
-        
+    
     <main>
         <div class = "cart-intro">
             <h1><i class="fas fa-shopping-cart"></i>   Your Cart</h1>
         </div>
 
-        <div class="cart-items">
+        <div class="cart-items"> <!--cart-items → Contains the shopping cart table.-->
             <nav>
                 <a href="index.html">⬅ Back to Home</a>
             </nav>
@@ -65,13 +72,13 @@
                     <th>Remove</th>
                 </tr>
                 </thead>
-            <tbody id="cart-table-body">
+            <tbody id="cart-table-body"> <!--cart-table-body → JavaScript dynamically inserts products here.-->
                 <!-- Cart items will be inserted here -->
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3" class="overall-label">Overall Total (RM):</td>
-                    <td id="overall-total">0.00</td>
+                    <td colspan="3" class="overall-label">Overall Total (RM):</td> <!--overall-label → Bold text for overall total.-->
+                    <td id="overall-total">0.00</td> <!--overall-total → Where the grand total is displayed.-->
                     <td></td>
                 </tr>
             </tfoot>
@@ -83,11 +90,13 @@
             <a href="CustomerInfo/CustomerInfo.html" class="confirm-btn">Confirm Order</a>
         </div>
 
+
     </main>
 
     <!-- For Footer Part -->
-    <footer class="footer">
-        <div class="footer-container">
+    <footer class="footer"> <!--footer → Whole footer container.-->
+        <div class="footer-container">  <!--footer-container → Grid/row holding all sections.-->
+            <!--footer-section → Reusable class for each section (quick links, contact, gallery).-->
             <div class="footer-section quick-links">
                 <h2>Quick Link</h2>
                 <ul>
@@ -108,8 +117,8 @@
                     <li><a href="FAQ.html">FAQ</a></li>
                 </ul>
             </div>
-
-            <div class="footer-section contact-us">
+            
+            <div class="footer-section contact-us"> 
                 <h2>Contact Us</h2>
                 <p>Don't be shy to ask us questions.</p>
                 <p>We're happy to help clarify your concerns.</p>
@@ -135,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <div class="privacy-policy">
+        <div class="privacy-policy"> <!--privacy-policy → Displays privacy link at bottom.-->
             <a href="privacypolicy.html">- Privacy Policy</a>
         </div>
     </footer>

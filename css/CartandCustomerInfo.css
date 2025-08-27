@@ -1,175 +1,169 @@
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F2F2F2;
+    margin: 0; /* Remove default browser margin */
+    font-family: Arial, sans-serif; /* Use clean sans-serif font */
+    background-color: #F2F2F2; /* Light grey background */
 }
 
-.cart-intro{
-    background-color: #DCEAF7;
-    text-align: center;
-    padding: 80px 60px;
-    padding-block-start: 100px;
-
+.cart-intro {
+    background-color: #DCEAF7; /* Light blue background for cart page intro */
+    text-align: center; /* Center align the text */
+    padding: 80px 60px; /* Add padding around the text */
+    padding-block-start: 100px; /* Extra padding at the top */
 }
 
 .cart-items h1 {
-    margin: 0;
-    font-size: 5rem;
-    color:black;
-    
+    margin: 0; /* Remove default margin */
+    font-size: 5rem; /* Large heading size */
+    color: black; /* Black text */
 }
 
 .cart-items nav {
-    text-align: right;
-
+    text-align: right; /* Align back button to the right */
 }
 
-.cart-items nav a{
-    color: black;
+.cart-items nav a {
+    color: black; /* Black color for navigation link */
 }
 
 .cart-items h1 {
-    margin: 0;
-    font-size: 3rem;
-    color:#DCEAF7;
-    
+    margin: 0; /* Remove margin */
+    font-size: 3rem; /* Slightly smaller heading for inside cart-items */
+    color: #DCEAF7; /* Light blue text */
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    padding: right;
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold font */
+    font-size: 2rem; /* Larger font size */
+    padding: right; /* (⚠ Probably typo: should be padding-right) */
 }
 
 .product-list {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
+    display: flex; /* Arrange products in a row */
+    gap: 20px; /* Space between products */
+    padding: 20px; /* Inner spacing */
 }
 
 .product {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
-    width: 200px;
-    border-radius: 10px;
+    background: white; /* White card background */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 15px; /* Inner spacing */
+    text-align: center; /* Center the content */
+    width: 200px; /* Fixed width */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Image takes full width of container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 button {
-    padding: 10px;
-    border: none;
-    background: #DCEAF7;
-    cursor: pointer;
-    border-radius: 5px;
+    padding: 10px; /* Inner spacing */
+    border: none; /* Remove default border */
+    background: #DCEAF7; /* Light blue background */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners */
 }
 
 button:hover {
-    background: #b7d3eb;
+    background: #b7d3eb; /* Darker blue when hovered */
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Merge borders into one */
+    margin-top: 20px; /* Space above the table */
 }
 
 th, td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
+    padding: 10px; /* Inner cell padding */
+    border: 1px solid #ccc; /* Light grey border for each cell */
+    text-align: center; /* Center text inside cells */
 }
 
 .cart-items {
-    padding: 40px;
+    padding: 40px; /* Padding around cart table */
 }
 
 /* Cart table footer styling */
 tfoot td.overall-label {
-    text-align: right;
-    font-weight: bold;
+    text-align: right; /* Align text to the right */
+    font-weight: bold; /* Make label bold */
 }
 tfoot td#overall-total {
-    font-weight: bold;
-    color: #333;
+    font-weight: bold; /* Bold text for total amount */
+    color: #333; /* Darker text color */
 }
 
 /* Confirm Order button */
 .confirm-container {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 40px;
+    display: flex; /* Flexbox for alignment */
+    justify-content: flex-end; /* Push button to the right */
+    margin: 20px 40px; /* Outer spacing */
 }
 
 .confirm-btn {
-    background-color: #3498db;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: background 0.3s ease;
+    background-color: #3498db; /* Blue button */
+    color: white; /* White text */
+    padding: 12px 24px; /* Bigger button padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.2rem; /* Slightly larger text */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s ease; /* Smooth hover effect */
 }
 
 .confirm-btn:hover {
-    background-color: #217dbb;
+    background-color: #217dbb; /* Darker blue when hovered */
 }
 
-
-/*===========================================================================*/
-
+/* =========================================================================== */
 /* CustomerInfo.html Form */
+
 .customer-info-container {
-    max-width: 400px;
-    margin: 80px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
+    max-width: 400px; /* Limit form width */
+    margin: 80px auto; /* Center horizontally with top/bottom spacing */
+    background: white; /* White background */
+    padding: 30px; /* Inner spacing */
+    border-radius: 12px; /* Rounded edges */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow effect */
+    text-align: center; /* Center text inside form */
 }
 
 .customer-info-container h2 {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark grey text */
 }
 
 .customer-info-container label {
-    display: block;
-    margin-top: 15px;
-    text-align: left;
-    font-weight: bold;
+    display: block; /* Each label on its own line */
+    margin-top: 15px; /* Space above each label */
+    text-align: left; /* Align label text to the left */
+    font-weight: bold; /* Bold text */
 }
 
 .customer-info-container input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Inner padding */
+    margin-top: 5px; /* Small spacing above input */
+    border-radius: 6px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
 }
 
 .customer-info-container button {
-    margin-top: 20px;
-    padding: 12px;
-    width: 100%;
-    background: #3498db;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+    margin-top: 20px; /* Space above button */
+    padding: 12px; /* Inner spacing */
+    width: 100%; /* Full width button */
+    background: #3498db; /* Blue background */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    color: white; /* White text */
+    font-size: 1rem; /* Normal text size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s; /* Smooth hover effect */
 }
 
 .customer-info-container button:hover {
-    background: #217dbb;
+    background: #217dbb; /* Darker blue on hover */
 }

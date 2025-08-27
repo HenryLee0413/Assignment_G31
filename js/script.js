@@ -73,7 +73,7 @@ Updates overall total price.
 Allows removing an item (❌ button).
 */
 
-// ==================== Confirm Order (Session) ====================
+// ==================== Confirm Order (Session + REST API) ====================
 $(function () {
     $("#customer-form").on("submit", function (e) {
         e.preventDefault();
@@ -92,18 +92,43 @@ $(function () {
             date: new Date().toISOString()
         };
 
+        // Save locally (still keep this)
         sessionStorage.setItem("order", JSON.stringify(order));
         alert("Order saved successfully!");
+
+        // ==================== NEW: Send to REST API ====================
+        $.ajax({
+            url: "https://fakestoreapi.com/carts", // Example API endpoint
+            type: "POST",
+            data: JSON.stringify({
+                userId: 1, // Replace with real user ID if available
+                date: new Date().toISOString(),
+                products: cart.map(item => ({
+                    productId: item.id,
+                    quantity: item.quantity
+                }))
+            }),
+            contentType: "application/json",
+            success: function (response) {
+                console.log("Order sent to API:", response);
+                alert("Order submitted to server!");
+            },
+            error: function (xhr, status, error) {
+                console.error("API Error:", error);
+                alert("Failed to submit order to server.");
+            }
+        });
     });
 });
 /* 
-Purpose: Saves order when user confirms checkout.
+Purpose: Saves order when user confirms checkout + sends to REST API.
 Key Features:
-Collects customer details from form.
-Combines with cart info.
-Saves to sessionStorage (temporary; cleared when browser closes).
-Prepares for Order Summary page.
+1. Collects customer details from form.
+2. Combines with cart info.
+3. Saves to sessionStorage (local).
+4. NEW: Posts order data to external REST API (Fake Store API demo).
 */
+
 
 // ==================== Slider ====================
 $(function () {

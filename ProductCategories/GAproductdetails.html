@@ -11,6 +11,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <script src="../js/script.js" defer></script>
     
+
+    <!-- This HTML code represents a dynamic product details page for the website
+      specializing in gaming accessories. The page is designed to display information about 
+      a specific product based on an 'id' query parameter in the URL (e.g., ?id=MSI001). 
+      It pulls data from a JavaScript object containing an array of products across categories 
+      like controllers, headsets, and monitors from brands such as 
+      MSI, Razer, ROG, Acer, Lenovo, and Machenike.-->
+
+
     <script defer>
     // Product data object
     const products = {
@@ -707,7 +716,7 @@
 
                 initSlider(slider);
 
-                                // === ensure add-to-cart has data-* attributes so existing click handler works ===
+                // === ensure add-to-cart has data-* attributes so existing click handler works ===
                 (function() {
                     const addBtn = document.querySelector('.add-to-cart');
                     if (addBtn) {
@@ -745,9 +754,11 @@
     <!-- For Header Part -->
     <div class="fixedHeader">
         <div class="logoContainer">
-            <a href="../index.html"><img src="../images/Logo/Logo.png" alt="Gadget Mall Logo" class="logo"></a>
+            <img src="../images/Logo/Logo.png" alt="Gadget Mall Logo" class="logo">
             <h1>Gadget Mall</h1>
         </div>
+        
+
         
         <div class="menu">
             <ul>
@@ -781,6 +792,10 @@
         <h2>Product Details</h2>
     </header>
 
+    <!--Dynamically loads the product's name, price 
+    (with a placeholder original price), description, specifications (as HTML), and images.-->
+    
+    <!-- Main Content -->
     <main class="product-details">
         <section>
             <div class="container">
@@ -813,10 +828,6 @@
                         
                         <p>   &nbsp;</p>
 
-                        
-
-                        
-                        
                     </div>
                 </div>
             </div>

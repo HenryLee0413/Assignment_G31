@@ -1,56 +1,59 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F2F2F2;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;   /* Sets a clean, readable font */
+    background-color: #F2F2F2;       /* Light grey background for the whole page */
+    margin: 0;                       /* Removes default browser margin */
+    padding: 0;                      /* Removes default browser padding */
+    line-height: 1.6;                /* Improves text readability */
 }
 
 /* Blue header row */
 .terms-header {
-    background-color: #DCEAF7;
-    text-align: center;
-    padding: 80px 60px; /* Keeps proportions on zoom */
+    background-color: #DCEAF7;       /* Light blue background for header section */
+    text-align: center;              /* Centers all text inside header */
+    padding: 80px 60px;              /* Spacing inside the header (responsive to zoom) */
 }
 
 .terms-header h1 {
-    margin: 0;
-    font-size: 3rem;
+    margin: 0;                       /* Removes extra margin around the title */
+    font-size: 3rem;                 /* Large header text */
 }
 
 /* Grey content section */
 .terms-content {
-    background-color: #F2F2F2;
-    font-size: 1.5rem;
-    padding: 30px 20px;
-    line-height: 1.6;
-    max-width: 80cap;
-    margin: auto;
+    background-color: #F2F2F2;       /* Matches page background color */
+    font-size: 1.5rem;               /* Bigger text for readability */
+    padding: 30px 20px;              /* Space inside the content area */
+    line-height: 1.6;                /* Spacing between lines */
+    max-width: 80cap;                /* Prevents content from stretching too wide */
+    margin: auto;                    /* Centers content horizontally */
 }
 
 .container {
-    max-width: 1000px;
-    margin: auto;
-    background: #fff;
-    padding: 30px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    max-width: 1000px;               /* Restricts container width */
+    margin: auto;                    /* Centers the container */
+    background: #fff;                /* White background card */
+    padding: 30px;                   /* Internal spacing */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* Light shadow for depth */
+    border-radius: 8px;              /* Rounded corners */
 }
+
 h3 {
-    color: #222;
-    border-bottom: 2px solid #D9D9D9;
-    padding-bottom: 8px;
+    color: #222;                     /* Dark text for section titles */
+    border-bottom: 2px solid #D9D9D9;/* Grey underline separator */
+    padding-bottom: 8px;             /* Space below heading text */
 }
+
 p {
-    margin-bottom: 15px;
+    margin-bottom: 15px;             /* Adds spacing after paragraphs */
 }
+
 ul {
-    margin-bottom: 20px;
-    padding-left: 20px;
+    margin-bottom: 20px;             /* Adds spacing below lists */
+    padding-left: 20px;              /* Indents list items */
 }
+
 .highlight {
-    background: #D9D9D9;
-    padding: 10px;
-    border-left: 5px solid #555;
+    background: #D9D9D9;             /* Light grey highlight background */
+    padding: 10px;                   /* Space inside highlight box */
+    border-left: 5px solid #555;     /* Dark grey left border for emphasis */
 }

@@ -1,93 +1,93 @@
 .privacy-policy-container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px 25px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    line-height: 1.7;
-    color: #333;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 1000px;          /* Limit content width to 1000px (prevents too wide text) */
+    margin: 40px auto;          /* Add space around and center horizontally */
+    padding: 20px 25px;         /* Inner spacing around the content */
+    background: #f9f9f9;        /* Light grey background for the container */
+    border-radius: 10px;        /* Rounded corners for smooth look */
+    line-height: 1.7;           /* Increase line spacing for readability */
+    color: #333;                /* Dark grey text color */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Soft shadow for card effect */
 }
 
 .privacy-policy-container h1 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #003554;
+    text-align: center;         /* Center align the main heading */
+    font-size: 36px;            /* Large heading size */
+    margin-bottom: 20px;        /* Space below the heading */
+    color: #003554;             /* Dark navy blue text */
 }
 
 .privacy-policy-container h2 {
-    margin-top: 25px;
-    font-size: 24px;
-    color: #005f8f;
+    margin-top: 25px;           /* Space above each section heading */
+    font-size: 24px;            /* Medium heading size */
+    color: #005f8f;             /* Blue color for sub-headings */
 }
 
 .privacy-policy-container p {
-    margin: 10px 0;
-    font-size: 18px;
+    margin: 10px 0;             /* Vertical spacing between paragraphs */
+    font-size: 18px;            /* Comfortable text size */
 }
 
 .privacy-policy-container ul {
-    margin: 15px 0 15px 25px;
-    font-size: 18px;
-    list-style-type: disc;
+    margin: 15px 0 15px 25px;   /* Margin above/below and indent left */
+    font-size: 18px;            /* Same size as paragraphs */
+    list-style-type: disc;      /* Use bullet points (default disc style) */
 }
 
 .privacy-policy-container a {
-    color: #0077cc;
-    text-decoration: none;
+    color: #0077cc;             /* Blue link color */
+    text-decoration: none;      /* Remove underline */
 }
 
 .privacy-policy-container a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Show underline when hovering over link */
 }
 
-/* Responsive Design */
+/* =================== Responsive Design =================== */
 @media (max-width: 1024px) {
     .privacy-policy-container {
-        padding: 15px 20px;
+        padding: 15px 20px;     /* Slightly reduce padding */
     }
     .privacy-policy-container h1 {
-        font-size: 28px;
+        font-size: 28px;        /* Make main heading smaller */
     }
     .privacy-policy-container h2 {
-        font-size: 20px;
+        font-size: 20px;        /* Make sub-headings smaller */
     }
     .privacy-policy-container p, 
     .privacy-policy-container ul {
-        font-size: 16px;
+        font-size: 16px;        /* Reduce body text size */
     }
 }
 
 @media (max-width: 768px) {
     .privacy-policy-container {
-        margin: 20px 10px;
-        padding: 15px;
+        margin: 20px 10px;      /* Reduce outer margin for smaller screens */
+        padding: 15px;          /* Reduce padding */
     }
     .privacy-policy-container h1 {
-        font-size: 24px;
+        font-size: 24px;        /* Smaller heading */
     }
     .privacy-policy-container h2 {
-        font-size: 18px;
+        font-size: 18px;        /* Smaller sub-heading */
     }
     .privacy-policy-container p,
     .privacy-policy-container ul {
-        font-size: 15px;
+        font-size: 15px;        /* Reduce paragraph and list text */
     }
 }
 
 @media (max-width: 480px) {
     .privacy-policy-container {
-        padding: 10px;
+        padding: 10px;          /* Compact padding for mobile */
     }
     .privacy-policy-container h1 {
-        font-size: 20px;
+        font-size: 20px;        /* Smallest heading for mobile */
     }
     .privacy-policy-container h2 {
-        font-size: 16px;
+        font-size: 16px;        /* Smallest sub-heading */
     }
     .privacy-policy-container p,
     .privacy-policy-container ul {
-        font-size: 14px;
+        font-size: 14px;        /* Smaller body text */
     }
 }

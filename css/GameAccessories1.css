@@ -1,91 +1,104 @@
+/* Title inside header */
 header h1 {
-    margin: 0;
-    padding: 10px;
-    font-size:6rem;
+    margin: 0; /* Remove default spacing */
+    padding: 10px; /* Inner spacing */
+    font-size: 6rem; /* Very large heading */
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 
 body {
-    background-color: #F2F2F2;
+    background-color: #F2F2F2; /* Light background */
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Clean font */
 }
 
+/* Centered header section */
 header {
     text-align: center;
     padding: 20px;
 }
 
+/* Container for products */
 .product-page {
-    background-color: #D9D9D9;
-    margin: 40px auto;
-    padding: 50px;
-    max-width: 1800px;
-    border-radius: 20px;
+    background-color: #D9D9D9; /* Grey background */
+    margin: 40px auto; /* Centered with margin */
+    padding: 50px; /* Inner spacing */
+    max-width: 1800px; /* Limit width */
+    border-radius: 20px; /* Rounded corners */
 }
 
+/* Each product section */
 .product-section {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Space below */
 }
 
+/* Section heading */
 .product-section h2 {
     font-size: 4rem;
     padding: 2px 10px;
     border-radius: 5px;
 }
 
+/* Grid layout for brands */
 .brand-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
 }
 
+/* Individual brand card */
 .brand-card {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 450px;
+    min-height: 450px; /* Minimum card height */
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Light shadow */
 }
 
+/* Hover effect for brand card */
 .brand-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Stronger shadow */
 }
 
+/* Brand name */
 .brand-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
+/* Image slider container */
 .slider {
     position: relative;
     overflow: hidden;
-    flex: 1;
+    flex: 1; /* Expand to fill */
     min-height: 200px;
 }
 
+/* Slider images */
 .slider img {
     display: none;
     width: 100%;
     height: 200px;
-    object-fit: contain;
+    object-fit: contain; /* Keep proportions */
     border-radius: 8px;
 }
 
+/* Show active image */
 .slider img.active {
     display: block;
 }
 
+/* Slider buttons (prev/next) */
 .slider button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.5); /* Semi-transparent */
     color: white;
     border: none;
     padding: 5px;
@@ -93,20 +106,24 @@ header {
     border-radius: 50%;
 }
 
+/* Hover effect for slider buttons */
 .slider button:hover {
-    background: rgba(78, 205, 196, 0.8);
+    background: rgba(78, 205, 196, 0.8); /* Teal hover */
     color: #1a1a2e;
-    transform: translateY(-50%) scale(1.1);
+    transform: translateY(-50%) scale(1.1); /* Slight zoom */
 }
-        
+
+/* Previous button position */
 .slider button.prev {
     left: 5px;
 }
 
+/* Next button position */
 .slider button.next {
     right: 5px;
 }
 
+/* Dots for slider navigation */
 .dots {
     display: flex;
     justify-content: center;
@@ -123,30 +140,51 @@ header {
     cursor: pointer;
 }
 
+/* Active dot */
 .dots span.active {
     background-color: #333;
 }
 
+/* Description text inside brand card */
 .brand-card p {
     flex: 0 0 auto;
     min-height: 60px;
     margin: 10px 0;
 }
 
+/* Add to cart button */
 .add-to-cart {
     margin-top: auto;
     align-self: center;
     width: 80%;
     padding: 12px 0;
     font-weight: bold;
-    background-color: #4ECDC4;
-    color: #1a1a2e;
+    background-color: #4ECDC4; /* Teal color */
+    color: #1a1a2e; /* Dark text */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
+/* Hover effect for button */
 .add-to-cart:hover {
-    background-color: #2a9d8f;
+    background-color: #2a9d8f; /* Darker teal */
+}
+
+/* ✅ Responsive Grid Adjustments */
+@media (max-width: 1200px) { /* Laptop */
+    .brand-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    }
+}
+@media (max-width: 768px) { /* Tablet */
+    .brand-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    }
+}
+@media (max-width: 480px) { /* Mobile */
+    .brand-grid {
+        grid-template-columns: 1fr; /* 1 per row */
+    }
 }

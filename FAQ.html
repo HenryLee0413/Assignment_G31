@@ -11,12 +11,18 @@
     <script src="js/script.js" defer></script>
     <script src="js/faqscript.js" defer></script>
 </head>
+
+<!-- This HTML code creates a comprehensive "Frequently Asked Questions" (FAQ) page 
+ for an online electronics retailer called Gadget Mall. 
+ The page is designed to help customers find answers to common questions
+  without needing to contact support directly. -->
+
 <body>
     
     <!-- For Header Part -->
     <div class="fixedHeader">
         <div class="logoContainer">
-            <a href="index.html"><img src="images/Logo/Logo.png" alt="Gadget Mall Logo" class="logo"></a>
+            <img src="images/Logo/Logo.png" alt="Gadget Mall Logo" class="logo">
             <h1>Gadget Mall</h1>
         </div>
     
@@ -50,30 +56,30 @@
     <main>
 
     <!-- Header Section -->
-    <div class="faq-header">
+    <div class="faq-header"> <!-- This is a thematic container. Its purpose is to wrap all the introductory content at the top of the FAQ page (the main title and subtitle). -->
         <h1>Frequently Asked Questions</h1>
         <p>Find answers to common questions about our products, services, and policies</p>
     </div>
 
     <!-- Main Content Section -->
-    <div class="faq-content">
-        <div class="container">
+    <div class="faq-content"> <!-- This is the main content container for the entire FAQ section. It holds everything from the search box down to the contact prompt. -->
+        <div class="container"> <!-- This is a utility/layout class. Its job is to center the content and constrain its width. -->
             <!-- Search Box -->
-            <div class="search-box">
+            <div class="search-box"> <!-- This is a component class. It clearly defines a specific UI element: the search box. -->
                 <input type="text" placeholder="Search for questions or topics...">
                 <button><i class="fas fa-search"></i> Search</button>
             </div>
             
             <!-- General Questions -->
-            <div class="faq-category">
+            <div class="faq-category"> <!-- This represents a distinct block of content—a category of questions (e.g., "Shipping & Delivery"). -->
                 <h2>General Questions</h2>
                 
-                <div class="faq-item">
-                    <div class="faq-question">
+                <div class="faq-item"> <!-- This represents a single Q&A pair within the FAQ category block. It's a child element of .faq-category. -->
+                    <div class="faq-question"> <!-- This styles the clickable question part of the faq-item. -->
                         What is Gadget Mall?
                         <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
                     </div>
-                    <div class="faq-answer">
+                    <div class="faq-answer"> <!-- This styles the hidden answer part of the faq-item. -->
                         <p>Gadget Mall is a leading online retailer specializing in the latest electronic gadgets such as mobile accessories, computer&laptop accessories, gaming accessories and CarGadgets. We offer a wide range of products from top brands at competitive prices, with a focus on customer satisfaction.</p>
                     </div>
                 </div>
@@ -243,7 +249,7 @@
             </div>
             
             <!-- Contact Prompt -->
-            <div class="contact-prompt">
+            <div class="contact-prompt"> <!-- To prompt user to access contact.html -->
                 <h2>Still Have Questions?</h2>
                 <p>Can't find the answer you're looking for? Our support team is here to help!</p>
                 <a href="ContactUs.html" class="contact-button">Contact Us</a>
@@ -259,7 +265,7 @@
 
     <!-- For Footer Part -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="footer-container"> 
             <div class="footer-section quick-links">
                 <h2>Quick Link</h2>
                 <ul>

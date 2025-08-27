@@ -233,9 +233,3 @@ DCEAF7
     }
 }
 
-/* Small phones: 1 per row */
-@media (max-width: 480px) {
-    .product-grid, .brand-grid {
-        grid-template-columns: 1fr;
-    }
-}

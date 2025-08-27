@@ -2,211 +2,210 @@
    Global Styles
 ===================== */
 body {
-    margin: 0;  /* Remove default browser margin */
-    font-family: Arial, sans-serif;  /* Set default font */
-    background-color: #F2F2F2;  /* Light gray background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
 }
 
 /* =====================
    CarGadget Section (cargadget.html)
 ===================== */
 .car-gadget-section {
-    background-color: #F2F2F2; /* Section background */
-    padding: 20px;             /* Inner spacing */
-    text-align: center;        /* Center text inside */
+    background-color: #F2F2F2;
+    padding: 20px;
+    text-align: center;
 }
 
 .car-gadget-title h1 {
-    margin: 0;                          /* Remove default margin */
-    padding-block-start: 50px;          /* Add space at the top */
-    font-size: 6rem;                    /* Very large text */
-    font-weight: bold;                  /* Bold text */
-    font-family: 'Times New Roman', Times, serif; /* Fancy font */
+    margin: 0;
+    padding-block-start: 50px;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .category-big-box {
-    background-color: #D9D9D9;  /* Gray box background */
-    margin: 30px auto;          /* Center box + margin top/bottom */
-    padding: 50px;              /* Inner padding */
-    border-radius: 8px;         /* Rounded corners */
-    max-width: 2000px;          /* Prevent it from stretching too wide */
-
+    background-color: #D9D9D9;
+    margin: 30px auto;
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 2000px;
 }
 
 .category-big-box h2 {
-    margin-top: 40px;   /* Space above each h2 */
-    margin-bottom: 15px;/* Space below each h2 */
-    font-size: 4rem;    /* Large heading */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 4rem;
 }
 
 .category-big-box h2:first-child {
-    margin-top: 0;  /* Remove extra top margin for first heading */
+    margin-top: 0;
 }
 
 .category-big-box h2 a {
-    text-decoration: none; /* Remove underline from links */
-    color: black;          /* Make link text black */
+    text-decoration: none;
+    color: black;
 }
 
 /* Grid for category thumbnails (cargadget.html) */
 .product-grid {
-    display: grid;                                      /* Grid layout */
-    gap: 15px;                                          /* Space between items */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    /* Auto fit items, each min 200px, max fill space */
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .product-item {
-    text-align: center;           /* Center content */
-    text-decoration: none;        /* Remove link underline */
-    color: black;                 /* Black text */
-    transition: transform 0.2s ease; /* Smooth zoom on hover */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease;
 }
 
 .product-item img {
-    width: 100%;        /* Image fills box width */
-    height: auto;       /* Height adjusts automatically */
-    border-radius: 5px; /* Rounded corners */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .product-item p {
-    margin-top: 8px;   /* Small gap above text */
-    font-size: 2rem;   /* Bigger text */
+    margin-top: 8px;
+    font-size: 2rem;
 }
 
 .product-item:hover {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05);
 }
 
 /* =====================
    Product Page (cargadget1.html)
 ===================== */
 .title-CarGadget {
-    text-align: center;         /* Center title */
-    padding-block-start: 50px;  /* Space at top */
+    text-align: center;
+    padding-block-start: 50px;
 }
 
 header h1 {
-    margin: 0;                       /* Remove default margin */
-    padding: 10px;                   /* Add padding */
-    font-size: 6rem;                 /* Very large title */
-    font-weight: bold;               /* Bold text */
-    font-family: 'Times New Roman', Times, serif; /* Fancy font */
+    margin: 0;
+    padding: 10px;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .product-page {
-    background-color: #D9D9D9; /* Gray background box */
-    margin: 40px auto;         /* Center with top/bottom margin */
-    padding: 50px;             /* Inner padding */
-    max-width: 1800px;         /* Limit max width */
-    border-radius: 20px;       /* Rounded corners */
+    background-color: #D9D9D9;
+    margin: 40px auto;
+    padding: 50px;
+    max-width: 1800px;
+    border-radius: 20px;
 }
 
 .product-section h2{
-    text-align: center;  /* Center headings */
-    padding: 15px;       /* Padding inside */
-    font-size: 50px;     /* Large text */
-    font-weight: bold;   /* Bold */
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 /* Brand grid for detailed product cards */
 .brand-grid {
-    display: grid;                                     /* Grid layout */
-    gap: 20px;                                         /* Space between cards */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    /* Flexible grid that adjusts to screen size */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
 }
 .brand-grid a{
-    text-decoration: none; /* Remove underline */
-    color:#333;            /* Dark gray text */
+    text-decoration: none;
+    color:#333;
 }
 
 .brand-card a h3 {
-    font-size: 1.5rem;   /* Medium heading size */
-    margin-bottom: 10px; /* Gap below */
-    text-align: center;  /* Center text */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .brand-card p{
-    text-align: center;  /* Center text */
+    text-align: center;
 }
 
 /* Fix the size of the brand-card */
 .brand-card img {
-    width: 200px;       /* Fixed width */
-    height: 300px;      /* Fixed height */
-    object-fit: cover;  /* Crop image nicely */
-    border-radius: 8px; /* Rounded corners */
-    display: block;     
-    margin: 0 auto;     /* Center image */
-}
+    width: 200px;    /* fixed width */
+    height: 300px;   /* fixed height */
+    object-fit: cover;  
+    border-radius: 8px; 
+    display: block;
+    margin: 0 auto;  /* center the image */
+  }
+  
 
 /* Slider inside brand-card */
 .slider {
-    position: relative;  /* Needed for positioning buttons */
-    overflow: hidden;    /* Hide images outside container */
+    position: relative;
+    overflow: hidden;
 }
 
 .slider img {
-    display: none;       /* Hide all images */
-    width: 100%;         /* Image fits container */
-    border-radius: 8px;  /* Rounded corners */
+    display: none;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .slider img.active {
-    display: block;      /* Show only active image */
+    display: block;
 }
 
 .slider button {
-    position: absolute;              /* Position on top */
-    top: 50%;                        /* Middle of slider */
-    transform: translateY(-50%);     /* Center vertically */
-    background: rgba(0,0,0,0.5);     /* Semi-transparent background */
-    color: white;                    /* White arrow */
-    border: none;                    /* No border */
-    padding: 5px;                    /* Small padding */
-    cursor: pointer;                 /* Pointer on hover */
-    border-radius: 50%;              /* Circular buttons */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .slider button.prev {
-    left: 5px; /* Left arrow button */
+    left: 5px;
 }
 
 .slider button.next {
-    right: 5px; /* Right arrow button */
+    right: 5px;
 }
 
 .dots {
-    display: flex;              /* Align dots in row */
-    justify-content: center;    /* Center dots */
-    margin-top: 5px;            /* Small gap above */
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
 }
 
 .dots span {
-    height: 8px;                 /* Small circle */
-    width: 8px;                  /* Small circle */
-    background-color: #bbb;      /* Gray dots */
-    border-radius: 50%;          /* Round shape */
-    display: inline-block;       
-    margin: 0 3px;               /* Space between dots */
-    cursor: pointer;             /* Clickable */
+    height: 8px;
+    width: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
 }
 
 .dots span.active {
-    background-color: #333; /* Darker color for active dot */
+    background-color: #333;
 }
 
 .add-to-cart {
-    margin-top: auto;         /* Push button to bottom */
-    align-self: center;       /* Center horizontally */
-    width: 100%;              /* Full width */
-    padding: 12px 0;          /* Padding top/bottom */
-    font-weight: bold;        /* Bold text */
-    background-color: #DCEAF7;/* Light blue button */
-    color: #1a1a2e;           /* Dark text */
-    border: none;             /* Remove border */
-    border-radius: 5px;       /* Rounded corners */
+    margin-top: auto;
+    align-self: center;
+    width: 100%;
+    padding: 12px 0;
+    font-weight: bold;
+    background-color: #DCEAF7;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 5px;  
 }
 
 /* =====================
@@ -215,21 +214,22 @@ header h1 {
 
 /* Desktop: 5 per row */
 @media (min-width: 1200px) {
-    .product-grid, .brand-grid, .category-big-box {
-        grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    .product-grid, .brand-grid {
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
 /* Tablet: 4 per row */
 @media (max-width: 1199px) and (min-width: 768px) {
-    .product-grid, .brand-grid, .category-big-box {
-        grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    .product-grid, .brand-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 /* Large phones: 2 per row */
 @media (max-width: 767px) {
-    .product-grid, .brand-grid, .category-big-box {
-        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    .product-grid, .brand-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+

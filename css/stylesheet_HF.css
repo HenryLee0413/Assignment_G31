@@ -117,7 +117,7 @@ body {
     font-size: 12px;
 }
 
-button {
+.search button {
     padding: 10px;
     border: none;
     background: #DCEAF7;

@@ -30,7 +30,8 @@ body {
     padding: 50px;              /* Inner padding */
     border-radius: 8px;         /* Rounded corners */
     max-width: 2000px;          /* Prevent it from stretching too wide */
-
+    display: grid;              /* Use grid layout inside */
+    gap: 20px;                  /* Space between grid items */
 }
 
 .category-big-box h2 {
@@ -52,7 +53,8 @@ body {
 .product-grid {
     display: grid;                                      /* Grid layout */
     gap: 15px;                                          /* Space between items */
-    grid-template-columns: repeat(5, 1fr); /* Always 5 items per row */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    /* Auto fit items, each min 200px, max fill space */
 }
 
 .product-item {

@@ -343,13 +343,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Map of keywords to pages
         const pageMap = {
-            "CarGadget": "CarGadget.html",
-            "gaming": "GamingAccessories.html",
-            "keyboard": "Keyboard.html",
-            "mouse": "Mouse.html",
+            "phone": "phoneAccessories.html",
+            "phone accessories": "phoneAccessories.html",
+            "charger": "phoneAccessories1.html",
+            "cable": "phoneAccessories1.html",
+            "power bank": "phoneAccessories1.html",
+
+            "laptop": "Computer.html",
+            "computer": "Computer.html",
+            "laptop accessories": "Computer.html",
+            "computer accesssories": "Computer.html",
+            "keyboard": "Computerget1.html",
+            "mouse": "Computerget1.html",
+            "usb hub":"Computerget1.html",
+
+            "gaming": "gameaccessories.html",
+            "gaming accesssories": "gameaccessories.html",
+            "controller": "GAproductdetails.html",
+            "headset": "GAproductdetails.html",
+            "monitor": "GAproductdetails.html",
+
+            "car gadget": "CarGadget.html",
+            "car":"CarGadget.html",
+            "car charger":"CarGadget1.html",
+            "car phone mount":"CarGadget1.html",
+            "dash cam": "CarGadget1.html",
+            "phone mount":"CarGadget1.html",
+            "dashcam": "CarGadget1.html",
+
+            "about us": "AboutUs.html",
+            "aboutus": "AboutUs.html",
             "best seller": "BestSeller.html",
             "faq": "FAQ.html",
-            "contact": "ContactUs.html"
+            "contact": "ContactUs.html",
+            "t&c":"term&condition.html"
             // 👉 add more keywords here
         };
 

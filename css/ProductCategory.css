@@ -8,7 +8,7 @@ body {
 }
 
 /* =====================
-   CarGadget Section (cargadget.html)
+   Car Gadget Section (cargadget.html)
 ===================== */
 .car-gadget-section {
     background-color: #F2F2F2;
@@ -191,7 +191,7 @@ header h1 {
     margin: 0 3px;
     cursor: pointer;
 }
-
+DCEAF7
 .dots span.active {
     background-color: #333;
 }
@@ -226,10 +226,16 @@ header h1 {
     }
 }
 
-/* Large phones: 2 per row */
+/* Large phones: 3 per row */
 @media (max-width: 767px) {
+    .product-grid, .brand-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Small phones: 2 per row */
+@media (max-width: 480px) {
     .product-grid, .brand-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-

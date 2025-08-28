@@ -59,28 +59,30 @@ nav a {
     height: auto; /* Maintain aspect ratio */
 }
 
-button {
-    padding: 10px; /* Inner spacing */
-    border: none; /* Remove default border */
-    background: #DCEAF7; /* Light blue background */
-    cursor: pointer; /* Pointer on hover */
-    border-radius: 5px; /* Rounded corners */
+/* ---------------- CART PAGE ---------------- */
+.cart-page button {
+    padding: 10px;
+    border: none;
+    background: #DCEAF7;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
-    background: #b7d3eb; /* Darker blue when hovered */
+.cart-page button:hover {
+    background: #b7d3eb;
 }
 
-table {
-    width: 100%; /* Full width table */
-    border-collapse: collapse; /* Merge borders into one */
-    margin-top: 20px; /* Space above the table */
+.cart-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-th, td {
-    padding: 10px; /* Inner cell padding */
-    border: 1px solid #ccc; /* Light grey border for each cell */
-    text-align: center; /* Center text inside cells */
+.cart-page th,
+.cart-page td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
 .cart-items {
@@ -119,7 +121,7 @@ tfoot td#overall-total {
 }
 
 /* =========================================================================== */
-/* CustomerInfo.html Form */
+/* ---------------- CUSTOMER INFO PAGE ---------------- */
 
 .customer-info-container {
     max-width: 400px; /* Limit form width */

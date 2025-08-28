@@ -165,6 +165,7 @@ main {
     align-items: flex-start; /* Aligns items to the top */
     flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
     padding-bottom: 20px; /* Space above the privacy policy line */
+    width: 100%; /* Ensure full width */
 }
 
 .footer-section {

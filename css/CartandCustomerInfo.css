@@ -125,7 +125,7 @@ tfoot td#overall-total {
 
 .customer-info-container {
     max-width: 400px; /* Limit form width */
-    margin: 80px auto; /* Center horizontally with top/bottom spacing */
+    margin: 40px auto; /* Center horizontally with top/bottom spacing */
     background: white; /* White background */
     padding: 30px; /* Inner spacing */
     border-radius: 12px; /* Rounded edges */

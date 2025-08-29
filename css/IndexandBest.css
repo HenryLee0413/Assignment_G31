@@ -18,19 +18,19 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr)); /* always 3 per row */
   gap: 30px;
-  justify-content: center;   /* center horizontally */
-  align-items: flex-start;   /* align top edges */
+  justify-content: center;                          /* center horizontally */
+  align-items: flex-start;                          /* align top edges */
   background-color: #f1f1f1;
   margin: 40px;
 }
     
 .MainPart > div a{
-  grid-column: 1 / span 3;  /* make it its own row (full width) */
+  grid-column: 1 / span 3;  /* make it into 1 row */
   text-align: left;         /* align text to left */
-  margin: 0px;             /* remove auto-centering */
-  width: auto;              /* let it expand naturally */
+  margin: 0px;           
+  width: auto;              
   font-size: 40px;
-  font-weight: bold;   /* makes all <p> bold */
+  font-weight: bold;   /* makes bold */
 }
 
 .MainPart > div p {
@@ -45,32 +45,32 @@ body {
 }
     
 .MainPart img {
-        width: 100%;           /* scale to container */
-        max-width: 300px;
-        height: auto;          /* keep ratio */
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
+  width: 100%;        
+  max-width: 300px;
+  height: 300px;         
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
     
 .MainPart img:hover {
-transform: scale(1.1); /* slight zoom on hover */
+transform: scale(1.1);                    /* slight zoom on hover */
 box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* stronger shadow on hover */
 }
 
-        /* Make all hyperlinks black without underline */
+/* Make all hyperlinks black without underline */
 a {
-color: black;             /* link text color */
-text-decoration: none;    /* remove underline */
+  color: black;             /* link text color */
+  text-decoration: none;    /* remove underline */
 }
     
 /* Optional: Change color on hover */
 a:hover {
-color: darkblue;          /* or any highlight color */
-text-decoration: underline; /* add underline back only on hover */
-text-decoration-color: darkblue; /* underline is dark blue */
+  color: darkblue;          /* or any highlight color */
+  text-decoration: underline; /* add underline back only on hover */
+  text-decoration-color: darkblue; /* underline is dark blue */
 }
     
     
